@@ -88,7 +88,7 @@ export default function Tours() {
           <li key={tour.id}>
             <img src={tour.image} alt={tour.name} className="tour-img" />
             <h2 className="tour-name">{tour.name}</h2>
-            <p className="tour-item-para">
+            <p id={`tour-item-para-${tour.id}`}>
               {tour.status ? tour.info : tour.info.slice(0, 200)}
             </p>
             {
@@ -97,7 +97,7 @@ export default function Tours() {
               </button>
             }
             <button
-              className="delete-btn"
+              id={`delete-btn-${tour.id}`}
               onClick={() => handleDelete(tour.id, index)}
             >
               Delete
