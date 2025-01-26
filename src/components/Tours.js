@@ -93,7 +93,7 @@ export default function Tours() {
             </p>
             {
               <button className="btn" onClick={() => handleShow(tour.id)} id={tour.status ? `see-less-${tour.id}`:`see-more-${tour.id}`}>
-                {tour.status ? "Show less" : "Show more"}
+                {tour.status ? "See less" : "See more"}
               </button>
             }
             <button
