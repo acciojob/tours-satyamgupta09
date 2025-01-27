@@ -92,7 +92,7 @@ export default function Tours() {
               {tour.status ? tour.info : tour.info.slice(0, 200)}
             </p>
             {
-              <button className="btn" onClick={() => handleShow(tour.id)} id={tour.status ? `see-less-${tour.id}`:`see-more-${tour.id}`}>
+              <button id={tour.status ? `see-less-${tour.id}`:`see-more-${tour.id}`} onClick={() => handleShow(tour.id)}>
                 {tour.status ? "See less" : "See more"}
               </button>
             }
